@@ -11,6 +11,7 @@ public class PlayerControllerRB : MonoBehaviour
 private InputSystem_Actions characterInput;
 private Rigidbody rb;
 private float moveInput;
+private bool isGrounded = false;
 
 [Header("Movement Values")]
 [SerializeField] float moveSpeed = 5f;
@@ -79,7 +80,11 @@ moveInput = context.ReadValue<Vector2>().x;
 // Method to handle player jump
 private void OnJump(InputAction.CallbackContext context)
 {
-rb.AddForce(Vector2.up * jumpForce, ForceMode.Impulse);
+if(isGrounded)
+{
+rb.AddForce(Vector2.up * jumpForce, ForceMode.Impulse); 
+}
+
 }
 
 // Method to handle pause menu toggle
@@ -106,7 +111,24 @@ Cursor.visible = false;
 characterInput.Player.Enable();                
 }
 }
+}
 
+private void OnTriggerEnter(Collider other)
+{
+if(other.CompareTag("Ground"))
+{
+isGrounded = true;
+Debug.Log("play is grounded");
+}
+}
+
+private void OnTriggerExit(Collider other)
+{
+if(other.CompareTag("Ground"))
+{
+isGrounded = false;
+Debug.Log("play is not grounded");
+}
 }
 
 

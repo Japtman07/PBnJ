@@ -1,16 +1,17 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CameraSwitchLogic : MonoBehaviour
 {
 [SerializeField] private GameObject myCam;
-
+[SerializeField] private CameraManager cm;
 private void OnTriggerEnter(Collider other)
 {
 if(other.CompareTag("Player"))
 {
-if (CameraManager.Instance != null)
+if (cm != null)
 {
-CameraManager.Instance.SwitchCam(myCam);
+cm.SwitchCam(myCam);
 }
 }
 }
