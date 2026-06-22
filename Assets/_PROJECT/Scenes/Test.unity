@@ -309,6 +309,7 @@ GameObject:
   - component: {fileID: 192189450}
   - component: {fileID: 192189454}
   - component: {fileID: 192189455}
+  - component: {fileID: 192189456}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Player
@@ -453,6 +454,27 @@ MonoBehaviour:
   moveSpeed: 5
   jumpForce: 10
   pauseMenu: {fileID: 0}
+--- !u!65 &192189456
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192189449}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.8792762, y: 2.3917997, z: 0.79988956}
+  m_Center: {x: 0.088091075, y: -0.0069686174, z: 0.10005522}
 --- !u!1 &286104348
 GameObject:
   m_ObjectHideFlags: 0
@@ -467,7 +489,7 @@ GameObject:
   - component: {fileID: 286104350}
   m_Layer: 0
   m_Name: PB Wall
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -816,7 +838,7 @@ GameObject:
   - component: {fileID: 411065390}
   - component: {fileID: 411065389}
   - component: {fileID: 411065388}
-  - component: {fileID: 411065387}
+  - component: {fileID: 411065391}
   m_Layer: 0
   m_Name: ' Fith Area'
   m_TagString: Untagged
@@ -833,25 +855,12 @@ Transform:
   m_GameObject: {fileID: 411065385}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.1, y: 4.5, z: 0.49}
-  m_LocalScale: {x: 11.79217, y: 13.4272585, z: 1}
+  m_LocalPosition: {x: 9.331, y: 4.5, z: 0.49}
+  m_LocalScale: {x: 11.330137, y: 13.4272585, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 500815811}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &411065387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 411065385}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7368b2fb868770a4d939799b51181e88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CameraSwitchLogic
-  myCam: {fileID: 1451405339}
 --- !u!65 &411065388
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -930,6 +939,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 411065385}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &411065391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411065385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7368b2fb868770a4d939799b51181e88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraSwitchLogic
+  myCam: {fileID: 1451405339}
+  cm: {fileID: 1612227023}
 --- !u!1 &478595385
 GameObject:
   m_ObjectHideFlags: 0
@@ -1093,7 +1116,7 @@ GameObject:
   - component: {fileID: 631712846}
   m_Layer: 0
   m_Name: 'Platform '
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1679,7 +1702,7 @@ GameObject:
   - component: {fileID: 728527116}
   m_Layer: 0
   m_Name: Platform
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1920,6 +1943,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraSwitchLogic
   myCam: {fileID: 0}
+  cm: {fileID: 0}
 --- !u!1 &823661414
 GameObject:
   m_ObjectHideFlags: 0
@@ -2191,7 +2215,7 @@ GameObject:
   - component: {fileID: 895452035}
   m_Layer: 0
   m_Name: Platform  (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2303,7 +2327,7 @@ GameObject:
   - component: {fileID: 972068471}
   m_Layer: 0
   m_Name: StartingPlatform
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2447,7 +2471,7 @@ GameObject:
   - component: {fileID: 1081960786}
   m_Layer: 0
   m_Name: Platform (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3064,7 +3088,7 @@ GameObject:
   - component: {fileID: 1429553073}
   m_Layer: 0
   m_Name: PB Wall (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3679,8 +3703,8 @@ Transform:
   m_GameObject: {fileID: 1678456043}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.3019, y: -3.2665, z: 0.49}
-  m_LocalScale: {x: 10.301322, y: 9.676621, z: 1}
+  m_LocalPosition: {x: -5.3019, y: -3.7149, z: 0.49}
+  m_LocalScale: {x: 10.301322, y: 8.779598, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 500815811}
@@ -3776,6 +3800,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraSwitchLogic
   myCam: {fileID: 711489380}
+  cm: {fileID: 1612227023}
 --- !u!1 &1701610292
 GameObject:
   m_ObjectHideFlags: 0
@@ -3788,7 +3813,7 @@ GameObject:
   - component: {fileID: 1701610297}
   - component: {fileID: 1701610296}
   - component: {fileID: 1701610295}
-  - component: {fileID: 1701610294}
+  - component: {fileID: 1701610298}
   m_Layer: 0
   m_Name: ' Third.2 Area'
   m_TagString: Untagged
@@ -3811,19 +3836,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 500815811}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1701610294
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1701610292}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7368b2fb868770a4d939799b51181e88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CameraSwitchLogic
-  myCam: {fileID: 749788480}
 --- !u!65 &1701610295
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3902,6 +3914,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1701610292}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1701610298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701610292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7368b2fb868770a4d939799b51181e88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraSwitchLogic
+  myCam: {fileID: 749788480}
+  cm: {fileID: 1612227023}
 --- !u!1 &1782778952
 GameObject:
   m_ObjectHideFlags: 0
@@ -4043,8 +4069,8 @@ Transform:
   m_GameObject: {fileID: 1806283194}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.6, y: 18.0954, z: 0.49}
-  m_LocalScale: {x: 11.79217, y: 13.4272585, z: 1}
+  m_LocalPosition: {x: 9.015, y: 18.0954, z: 0.49}
+  m_LocalScale: {x: 10.962001, y: 13.4272585, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 500815811}
@@ -4140,6 +4166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraSwitchLogic
   myCam: {fileID: 1548856000}
+  cm: {fileID: 1612227023}
 --- !u!1 &1907819007
 GameObject:
   m_ObjectHideFlags: 0
@@ -4315,8 +4342,8 @@ Transform:
   m_GameObject: {fileID: 1948770353}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.7471, y: 7.0927, z: 0.49}
-  m_LocalScale: {x: 13.410829, y: 10.439173, z: 1}
+  m_LocalPosition: {x: -3.7471, y: 6.8014, z: 0.49}
+  m_LocalScale: {x: 13.410829, y: 10.5107, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 500815811}
@@ -4340,8 +4367,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 0.88478076, z: 1}
+  m_Center: {x: 0, y: 0.057609636, z: 0}
 --- !u!23 &1948770356
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4412,6 +4439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraSwitchLogic
   myCam: {fileID: 1220179867}
+  cm: {fileID: 1612227023}
 --- !u!1 &1956483338
 GameObject:
   m_ObjectHideFlags: 0
@@ -4458,7 +4486,7 @@ GameObject:
   - component: {fileID: 1964623568}
   m_Layer: 0
   m_Name: Platform  (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4606,7 +4634,7 @@ GameObject:
   - component: {fileID: 2022414381}
   - component: {fileID: 2022414380}
   - component: {fileID: 2022414379}
-  - component: {fileID: 2022414378}
+  - component: {fileID: 2022414382}
   m_Layer: 0
   m_Name: Third Area
   m_TagString: Untagged
@@ -4623,25 +4651,12 @@ Transform:
   m_GameObject: {fileID: 2022414376}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.5562, y: 20.4599, z: 0.49}
-  m_LocalScale: {x: 11.79217, y: 8.698101, z: 1}
+  m_LocalPosition: {x: -4.5562, y: 20.2798, z: 0.49}
+  m_LocalScale: {x: 11.79217, y: 9.058202, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 500815811}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2022414378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2022414376}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7368b2fb868770a4d939799b51181e88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CameraSwitchLogic
-  myCam: {fileID: 749788480}
 --- !u!65 &2022414379
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4720,6 +4735,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2022414376}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2022414382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022414376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7368b2fb868770a4d939799b51181e88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraSwitchLogic
+  myCam: {fileID: 749788480}
+  cm: {fileID: 1612227023}
 --- !u!1 &2076288095
 GameObject:
   m_ObjectHideFlags: 0
