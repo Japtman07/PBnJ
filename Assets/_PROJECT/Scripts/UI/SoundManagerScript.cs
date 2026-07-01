@@ -47,7 +47,7 @@ public class SoundManagerScript : MonoBehaviour
     {
         MasterSlider.value = PlayerPrefs.GetFloat("MasterVol");
         MusicSlider.value = PlayerPrefs.GetFloat("MusicVol");
-        SFXSlider.value = PlayerPrefs.GetFloat("SFXrVol");
+        SFXSlider.value = PlayerPrefs.GetFloat("SFXVol");
         
         ChangeMainVolume();
         ChangeMusicVolume();
