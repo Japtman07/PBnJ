@@ -100,27 +100,6 @@ isOnWall = false;
 }
 }
 
-private void OnCollisionStay(Collision collision)
-{
-Collider hitCollider = collision.GetContact(0).thisCollider;
-
-if (collision.gameObject.CompareTag("Wall"))
-{
-if (hitCollider == pb)
-{
-isOnWall = true;
-}
-}
-}
-
-private void OnCollisionExit(Collision collision)
-{
-if( collision.gameObject.CompareTag("Wall"))
-{
-isOnWall = true;   
-}
-}
-
 private void OnTriggerEnter(Collider other)
 {
 if(other.CompareTag("Ground"))
@@ -136,6 +115,26 @@ if(other.CompareTag("Ground"))
 {
 isGrounded = false;
 Debug.Log("isGrounded false");  
+}
+}
+
+// ---- HANDLES WALL COLLISION ---
+private void OnCollisionStay(Collision collision)
+{
+if (collision.gameObject.CompareTag("Wall"))
+{
+if (collision.GetContact(0).thisCollider == pb)
+{
+isOnWall = true;
+}
+}
+}
+
+private void OnCollisionExit(Collision collision)
+{
+if( collision.gameObject.CompareTag("Wall"))
+{
+isOnWall = false;   
 }
 }
 
