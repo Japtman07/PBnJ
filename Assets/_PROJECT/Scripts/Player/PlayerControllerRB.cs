@@ -43,6 +43,7 @@ Cursor.lockState = CursorLockMode.Locked;
 Cursor.visible = false;
 }
 
+// ---- HANDLES PLAYER MOVEMENT AND WALL JUMPING ---
 void FixedUpdate()
 {
 if (isOnWall && !isWallJumping)
@@ -117,6 +118,14 @@ rb.AddForce((Vector3.up * wallJumpForce) + (dir * wallForce), ForceMode.Impulse)
 }
 }
 
+private IEnumerator WallJumpCooldown()
+{
+isWallJumping = true;
+yield return new WaitForSeconds(0.5f);
+isWallJumping = false;
+}
+
+
 private void OnTriggerEnter(Collider other)
 {
 if(other.CompareTag("Ground"))
@@ -155,13 +164,6 @@ if( collision.gameObject.CompareTag("Wall"))
 isOnWall = false;
 Debug.Log("isOnWall false");
 }
-}
-
-private IEnumerator WallJumpCooldown()
-{
-isWallJumping = true;
-yield return new WaitForSeconds(0.5f);
-isWallJumping = false;
 }
 
 // ---- HANDLES PLAYER ROTATION ---
