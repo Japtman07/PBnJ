@@ -10,14 +10,18 @@ private Rigidbody rb;
 [Header("Movement Values")]
 [SerializeField] float moveSpeed = 5f;
 [SerializeField] private float jumpForce = 10f;
+[SerializeField] private float wallForce = 2f;
+[SerializeField] private float wallJumpForce = 1f;
 [SerializeField] private float rotationDuration = 180f;
 private float moveInput;
 private bool isGrounded = false;
 private bool rotateInput = false;
 
+
 [Header("Wall Check")]
 [SerializeField] private Collider pb;
 public bool isOnWall = false;
+public bool isWallJumping = false;
 
 [Header("UI")]
 [SerializeField] GameObject pauseMenu; 
@@ -41,7 +45,7 @@ Cursor.visible = false;
 
 void FixedUpdate()
 {
-if (isOnWall)
+if (isOnWall && !isWallJumping)
 {
 rb.linearVelocity = Vector3.zero;
 rb.useGravity = false;
@@ -92,11 +96,24 @@ moveInput = context.ReadValue<Vector2>().x;
 // ---- HANDLES PLAYER JUMP ---
 private void OnJump(InputAction.CallbackContext context)
 {
-if(context.performed && (isGrounded || isOnWall))
+if(context.performed && isGrounded)
 {
 rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0, 0);
 rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
 isOnWall = false; 
+}
+else if(context.performed && isOnWall)
+{
+isWallJumping = true;
+
+Vector3 contactPoint = pb.ClosestPoint(transform.position);
+Vector3 dir = (transform.position - contactPoint).normalized;
+
+rb.linearVelocity = Vector3.zero;
+
+StartCoroutine(WallJumpCooldown());
+
+rb.AddForce((Vector3.up * wallJumpForce) + (dir * wallForce), ForceMode.Impulse);
 }
 }
 
@@ -126,6 +143,7 @@ if (collision.gameObject.CompareTag("Wall"))
 if (collision.GetContact(0).thisCollider == pb)
 {
 isOnWall = true;
+Debug.Log("isOnWall true");
 }
 }
 }
@@ -134,8 +152,16 @@ private void OnCollisionExit(Collision collision)
 {
 if( collision.gameObject.CompareTag("Wall"))
 {
-isOnWall = false;   
+isOnWall = false;
+Debug.Log("isOnWall false");
 }
+}
+
+private IEnumerator WallJumpCooldown()
+{
+isWallJumping = true;
+yield return new WaitForSeconds(0.5f);
+isWallJumping = false;
 }
 
 // ---- HANDLES PLAYER ROTATION ---
