@@ -275,6 +275,7 @@ GameObject:
   m_Component:
   - component: {fileID: 75391883}
   - component: {fileID: 75391884}
+  - component: {fileID: 75391885}
   m_Layer: 0
   m_Name: Zone6
   m_TagString: Untagged
@@ -318,6 +319,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.1, y: 2.9118803, z: 0.19887511}
   m_Center: {x: 0, y: -0.66170806, z: 0.12332551}
+--- !u!114 &75391885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75391882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7368b2fb868770a4d939799b51181e88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraSwitchLogic
+  myCam: {fileID: 1106978782}
+  cm: {fileID: 551588836}
 --- !u!1 &99527351
 GameObject:
   m_ObjectHideFlags: 0
@@ -1556,6 +1571,7 @@ GameObject:
   m_Component:
   - component: {fileID: 518756487}
   - component: {fileID: 518756488}
+  - component: {fileID: 518756489}
   m_Layer: 0
   m_Name: Zone9
   m_TagString: Untagged
@@ -1599,6 +1615,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.1, y: 2.9118803, z: 0.11271287}
   m_Center: {x: 0, y: -0.66170806, z: 0.15255435}
+--- !u!114 &518756489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518756486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7368b2fb868770a4d939799b51181e88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraSwitchLogic
+  myCam: {fileID: 1365733883}
+  cm: {fileID: 551588836}
 --- !u!1 &551588834
 GameObject:
   m_ObjectHideFlags: 0
@@ -2479,6 +2509,7 @@ GameObject:
   m_Component:
   - component: {fileID: 843921406}
   - component: {fileID: 843921407}
+  - component: {fileID: 843921408}
   m_Layer: 0
   m_Name: Zone1
   m_TagString: Untagged
@@ -2522,6 +2553,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.1, y: 2.9118803, z: 0.1791211}
   m_Center: {x: 0, y: -0.66170806, z: 0.07093628}
+--- !u!114 &843921408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843921405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7368b2fb868770a4d939799b51181e88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraSwitchLogic
+  myCam: {fileID: 330585543}
+  cm: {fileID: 551588836}
 --- !u!1 &851162338
 GameObject:
   m_ObjectHideFlags: 0
@@ -2532,6 +2577,7 @@ GameObject:
   m_Component:
   - component: {fileID: 851162339}
   - component: {fileID: 851162340}
+  - component: {fileID: 851162341}
   m_Layer: 0
   m_Name: Zone8
   m_TagString: Untagged
@@ -2575,6 +2621,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.1, y: 2.9118803, z: 0.13319221}
   m_Center: {x: 0, y: -0.66170806, z: 0.10272067}
+--- !u!114 &851162341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851162338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7368b2fb868770a4d939799b51181e88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraSwitchLogic
+  myCam: {fileID: 1168769272}
+  cm: {fileID: 551588836}
 --- !u!1 &873277661
 GameObject:
   m_ObjectHideFlags: 0
@@ -3363,6 +3423,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1005776024}
   - component: {fileID: 1005776025}
+  - component: {fileID: 1005776026}
   m_Layer: 0
   m_Name: Zone3
   m_TagString: Untagged
@@ -3406,6 +3467,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.1, y: 2.9118803, z: 0.19505674}
   m_Center: {x: 0, y: -0.66170806, z: 0.1267424}
+--- !u!114 &1005776026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005776023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7368b2fb868770a4d939799b51181e88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraSwitchLogic
+  myCam: {fileID: 1727395460}
+  cm: {fileID: 551588836}
 --- !u!1 &1018622321
 GameObject:
   m_ObjectHideFlags: 0
@@ -3964,6 +4039,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1097857223}
   - component: {fileID: 1097857224}
+  - component: {fileID: 1097857225}
   m_Layer: 0
   m_Name: Zone4
   m_TagString: Untagged
@@ -4007,6 +4083,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.1, y: 2.9118803, z: 0.15028754}
   m_Center: {x: 0, y: -0.66170806, z: 0.14904286}
+--- !u!114 &1097857225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097857222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7368b2fb868770a4d939799b51181e88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraSwitchLogic
+  myCam: {fileID: 1450575177}
+  cm: {fileID: 551588836}
 --- !u!1 &1106978782
 GameObject:
   m_ObjectHideFlags: 0
@@ -5890,6 +5980,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1487822889}
   - component: {fileID: 1487822890}
+  - component: {fileID: 1487822891}
   m_Layer: 0
   m_Name: Zone5
   m_TagString: Untagged
@@ -5933,6 +6024,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.1, y: 2.9118803, z: 0.17144625}
   m_Center: {x: 0, y: -0.66170806, z: 0.16918482}
+--- !u!114 &1487822891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1487822888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7368b2fb868770a4d939799b51181e88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraSwitchLogic
+  myCam: {fileID: 1251395125}
+  cm: {fileID: 551588836}
 --- !u!1 &1561733836
 GameObject:
   m_ObjectHideFlags: 0
@@ -6795,6 +6900,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1729895151}
   - component: {fileID: 1729895152}
+  - component: {fileID: 1729895153}
   m_Layer: 0
   m_Name: Zone2
   m_TagString: Untagged
@@ -6838,6 +6944,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.1, y: 2.9118803, z: 0.19495052}
   m_Center: {x: 0, y: -0.66170806, z: 0.13800707}
+--- !u!114 &1729895153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729895150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7368b2fb868770a4d939799b51181e88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraSwitchLogic
+  myCam: {fileID: 1093373216}
+  cm: {fileID: 551588836}
 --- !u!1 &1779029782
 GameObject:
   m_ObjectHideFlags: 0
@@ -6879,6 +6999,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1906351728}
   - component: {fileID: 1906351729}
+  - component: {fileID: 1906351730}
   m_Layer: 0
   m_Name: Zone7
   m_TagString: Untagged
@@ -6922,6 +7043,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.1, y: 2.9118803, z: 0.1089674}
   m_Center: {x: 0, y: -0.66170806, z: 0.114833385}
+--- !u!114 &1906351730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906351727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7368b2fb868770a4d939799b51181e88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraSwitchLogic
+  myCam: {fileID: 950075977}
+  cm: {fileID: 551588836}
 --- !u!1 &1936405310
 GameObject:
   m_ObjectHideFlags: 0
