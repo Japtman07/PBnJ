@@ -14,6 +14,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/_PROJECT/Scripts/AnimationScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@8ccc29d23a79/Runtime/TMP/TMP_Text.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
