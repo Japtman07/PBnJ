@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0ae9002fccd45404298670d2e58cfd78
+guid: a72bde014c811cb4da7f48a39554dff0
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - CARTOON
+  - HVD Comic Serif Pro
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
